@@ -20,14 +20,14 @@ class CuerpoIndice extends Component {
     render() {
         return (
             <div>
-                <TablaIMC IMC = {18.5} items={this.state.card1}/>
-                <TablaIMC IMC = {18.5 , 24.9} items={this.state.card2}/>
-                <TablaIMC IMC = {25 , 26.9} items={this.state.card3}/>
-                <TablaIMC IMC = {27 , 29.9} items={this.state.card4}/>
-                <TablaIMC IMC = {30 , 34.9} items={this.state.card5}/>
-                <TablaIMC IMC = {35 , 39.9} items={this.state.card6}/>
-                <TablaIMC IMC = {40 , 49.9} items={this.state.card7}/>
-                <TablaIMC IMC = {50} items={this.state.card8}/>
+                <TablaIMC IMC = "18.5" items={this.state.card1}/>
+                <TablaIMC IMC = "18.5 - 24.9" items={this.state.card2}/>
+                <TablaIMC IMC = "25 - 26.9" items={this.state.card3}/>
+                <TablaIMC IMC = "27 - 29.9" items={this.state.card4}/>
+                <TablaIMC IMC = "30 - 34.9" items={this.state.card5}/>
+                <TablaIMC IMC = "35 - 39.9" items={this.state.card6}/>
+                <TablaIMC IMC = "40 - 49.9" items={this.state.card7}/>
+                <TablaIMC IMC = "50" items={this.state.card8}/>
             </div>
     )
     }
