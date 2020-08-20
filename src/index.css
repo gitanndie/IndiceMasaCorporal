@@ -16,7 +16,26 @@ code {
   width: 100px;
 }
 
+.form1 {
+  position: relative;
+  top: -120px;
+  left: 450px;
+}
+
+.form2 {
+  position: relative;
+  top: -220px;
+  left: 650px;
+}
+
 #table {
-  border: 2px solid black;
-  justify-content: center;
+  width: 20%;
+  height: 50px;
+  
+}
+
+th, td {
+  width: 25%;
+  text-align: left;
+  vertical-align: top;
 }

@@ -2,7 +2,7 @@ import React from 'react'
 
 function FormularioCalculo() {
     return (
-        <div>
+        <div className="form">
             <label htmlFor="">Peso (Kg)</label>
             <input type="number" name="peso" id="peso" className="caja_texto" />
             <br/>
