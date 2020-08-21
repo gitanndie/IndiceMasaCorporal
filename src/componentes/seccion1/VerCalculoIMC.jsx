@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 function VerCalculoIMC(props) {
     let imc = props.peso/props.altura;
     return (
-        <div className="form1">
+        <div className="column">
             <h3>IMC</h3>
             <h3>{imc}</h3>
         </div>

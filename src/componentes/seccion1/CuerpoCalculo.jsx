@@ -5,14 +5,18 @@ import BasculaIMC from './BasculaIMC';
 
 export default function CuerpoCalculo() {
     return (
-        <article>
-            <FormularioCalculo />
-            <VerCalculoIMC 
-            altura={150}
-            peso={60}
-            />
-            <BasculaIMC />
-        </article>
+        <section className="panel-block">
+            <article className="columns is-mobile">
+                <FormularioCalculo />
+                <VerCalculoIMC 
+                altura={150}
+                peso={60}
+                />
+                <BasculaIMC />
+            </article>
+        </section>
+
+    
     )
 }
 

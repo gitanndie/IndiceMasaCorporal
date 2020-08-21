@@ -5,7 +5,7 @@ import CabeceraIndice from '../seccion2/CabeceraIndice';
 
 function CalculadoraApp(){
     return(
-        <section>
+        <section className="panel">
             < CabeceraCalculo titulo="Calculadora de IMC" 
                             nombre_clase="cabecera-calculo"
             />
