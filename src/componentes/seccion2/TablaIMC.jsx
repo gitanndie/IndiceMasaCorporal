@@ -1,16 +1,27 @@
-import React from 'react'
-
-function TablaIMC({imc, items}) {
+import React,{Component}from 'react';
+class TablaIMC extends Component {
+    // constructor(props){
+    //     super(props)
+    //    this.state = {}
+    // }
+    render(){
     return (
         <div>
             <table border="1" id="table">
+            <tr>
+                <th>{this.props.title}</th>
+                <th>{this.props.description}</th>
+            </tr>
+            {this.props.items.map(item => (
                 <tr>
-                    <td>{imc}</td>
-                    <td>{items}</td>
+                    <td>{item.numero}</td>
+                    <td>{item.texto}</td>
                 </tr>
-            </table>
+            ))}
+        </table>
         </div>
     )
+    }
 }
 
 export default TablaIMC

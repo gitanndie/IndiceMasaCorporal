@@ -13,20 +13,8 @@ code {
 }
 
 #img_bascula {
-  width: 100px;
+  width: 50%;
 }
-/* 
-.form1 {
-  position: relative;
-  top: -120px;
-  left: 450px;
-}
-
-.form2 {
-  position: relative;
-  top: -220px;
-  left: 650px;
-} */
 
 #table {
   width: 20%;

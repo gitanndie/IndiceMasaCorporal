@@ -1,7 +1,6 @@
 import React from 'react';
 import CabeceraCalculo from './CabeceraCalculo'
 import CuerpoCalculo from './CuerpoCalculo'
-import CabeceraIndice from '../seccion2/CabeceraIndice';
 
 function CalculadoraApp(){
     return(
@@ -10,7 +9,6 @@ function CalculadoraApp(){
                             nombre_clase="cabecera-calculo"
             />
             < CuerpoCalculo />
-            < CabeceraIndice />
         </section>
     );
 }

@@ -1,54 +1,30 @@
-import React from 'react'
+import React, { Component } from 'react'
 import TablaIMC from './TablaIMC'
-
-const datos = [
-    {
-        card : "bajo de peso",
-        imc : "menor a 18.5"
-    },
-    {
-        card : "normal peso",
-        imc : "18.5, 24.9"
-    },
-    {
-        card : "sobrepeso grado I",
-        imc : "25, 26.9"
-    },
-    {
-        card : "sobrepeso grado II",
-        imc : "27, 29.9"
-    },
-    {
-        card : "Obesidad tipo I",
-        imc : "30, 34.9"
-    },
-    {
-        card : "Obesidad tipo II",
-        imc : "35, 39.9"
-    },
-    {
-        card : "Obesidad tipo III morvida",
-        imc : "40, 49.9"
-    },
-    {
-        card : "Obesidad tipo IV extrema",
-        imc : "mayor a 50"
-    },
-
-]
-
-
-export const CuerpoIndice = () => {
-    return (
-        <div>
-            {datos.map(dato => (
-                <TablaIMC
-                    imc={dato.imc}
-                    items={dato.card} 
-                />
-            ))}
-        </div>
+class CuerpoIndice extends Component {
+    constructor (props) {
+        super(props);
+        this.state = {
+            table1: [
+            {numero: "18.5", texto: "Bajo de peso"},
+            {numero: "18.5 - 24.9", texto: "normal de peso"},
+            {numero: "25 - 26.9", texto: "sobrepeso grado1"},
+            {numero: "27 - 29.9", texto: "sobrepeso grado2"},
+            {numero:  "30 - 34.9", texto: "Obesidad tipo1"},
+            {numero:  "35 - 39.9", texto: "Obesidad tipo2"},
+            {numero:  "40 - 49.9", texto: "Obesidad tipo3 morvida"},
+            {numero:  " mayor 50", texto: "Obesidad tipo4 extrema"},
+        ],
+    }
+    
+    }
+    render() {
+        return (
+            <div>
+                <TablaIMC items={this.state.table1} title="Imc" description="situacion"/>
+            </div>
     )
+    }
+    
 }
 
 export default CuerpoIndice
