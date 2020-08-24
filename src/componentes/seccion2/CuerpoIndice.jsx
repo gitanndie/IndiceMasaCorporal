@@ -1,30 +1,28 @@
 import React, { Component } from 'react'
 import TablaIMC from './TablaIMC'
-class CuerpoIndice extends Component {
-    constructor (props) {
-        super(props);
-        this.state = {
-            table1: [
-            {numero: "18.5", texto: "Bajo de peso"},
-            {numero: "18.5 - 24.9", texto: "normal de peso"},
-            {numero: "25 - 26.9", texto: "sobrepeso grado1"},
-            {numero: "27 - 29.9", texto: "sobrepeso grado2"},
-            {numero:  "30 - 34.9", texto: "Obesidad tipo1"},
-            {numero:  "35 - 39.9", texto: "Obesidad tipo2"},
-            {numero:  "40 - 49.9", texto: "Obesidad tipo3 morvida"},
-            {numero:  " mayor 50", texto: "Obesidad tipo4 extrema"},
-        ],
-    }
-    
-    }
+export default class CuerpoIndice extends Component {
+
     render() {
         return (
-            <div>
-                <TablaIMC items={this.state.table1} title="Imc" description="situacion"/>
+            <div className="columns is-mobile panel-block">
+                <div className="column is-half is-offset-one-quarter">
+                    <TablaIMC imc = {this.props.App.state.imc} datosTabla={
+                        {
+                            cabecera: { cabecera1: "IMC", cabecera2: "Situación", cabecera3: "Valoración" },
+                            data: [
+                                {li : 0,ls : 18.5, imc: "Menor de 18.5", situacion: "Bajo peso" },
+                                {li : 18.5,ls : 24.9, imc: "18.5 - 24.9", situacion: "Normopeso" },
+                                {li : 25,ls : 26.9, imc: "25 - 26.9", situacion: "Sobrepeso grado I" },
+                                {li : 27,ls : 29.9, imc: "27 - 29.9", situacion: "Sobrepeso grado II" },
+                                {li : 30,ls : 34.9, imc: "30 - 34.9", situacion: "Obesidad de tipo I" },
+                                {li : 35,ls : 39.9, imc: "35 - 39.9", situacion: "Obesidad de tipo II" },
+                                {li : 40,ls : 49.9, imc: "40 - 49.9", situacion: "Obesidad de tipo III (mórbida)" },
+                                {li : 50,ls : Number.MAX_VALUE, imc: "Mayor a 50", situacion: "Obesidad de tipo IV (extrema)" },
+                            ]
+                        }
+                    } />
+                </div>
             </div>
-    )
+        )
     }
-    
-}
-
-export default CuerpoIndice
+};

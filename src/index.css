@@ -16,14 +16,3 @@ code {
   width: 50%;
 }
 
-#table {
-  width: 20%;
-  height: 50px;
-  
-}
-
-th, td {
-  width: 25%;
-  text-align: left;
-  vertical-align: top;
-}
