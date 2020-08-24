@@ -1,16 +1,16 @@
 import React from 'react';
-import CabeceraCalculo from './CabeceraCalculo'
-import CuerpoCalculo from './CuerpoCalculo'
+import Cabecera from './CabeceraCalculo';
+import Cuerpo from './CuerpoCalculo';
 
-function CalculadoraApp(props){
-    return(
+function CalculadoraAPP (props){
+    return (
         <section className="panel">
-            < CabeceraCalculo titulo="Calculadora de IMC" 
-                            nombre_clase="cabecera-calculo"
+            <Cabecera titulo="Calculadora" 
+                    nombre_clase="cabecera_calculo"
             />
-            < CuerpoCalculo App = {props.App} />
+            <Cuerpo App = {props.App}/>
         </section>
     );
 }
 
-export default CalculadoraApp;
+export default CalculadoraAPP;

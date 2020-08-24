@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import CalculadoraApp from './componentes/seccion3/CalculadoraApp'
-import DetalleIMCApp from './componentes/seccion2/CabeceraIMCApp'
+import DetalleImcApp from './componentes/seccion2/DetalleImcApp'
 	
 class App extends Component {
 	constructor(props){
@@ -13,11 +13,7 @@ class App extends Component {
     return (
       <div>
         <CalculadoraApp App = {this}/>
-        <DetalleIMCApp
-        nombre = "Andrea" 
-        apellido = "González" 
-        edad = {30} 
-        App = {this}/>
+        <DetalleImcApp nombre = "oscar" apellido = "mesa" edad = {29} App = {this}/>
       </div>
     );
   }

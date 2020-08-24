@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 class TablaIMC extends Component {
     render() {
         let {

@@ -4,10 +4,9 @@ import bascula from '../../imagenes/bascula-dibujo.png';
 function BasculaIMC() {
     return (
         <div className="column">
-            <img src={bascula} alt="imagen pies" id="img_bascula"
-            />
+            <img src={bascula} alt="Imagen de bascula" id="img_bascula"/>
         </div>
     )
-}
+};
 
-export default BasculaIMC
+export default BasculaIMC;

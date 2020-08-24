@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
-import TablaIMC from './TablaIMC'
+import Tabla from './TablaIMC'
 export default class CuerpoIndice extends Component {
+
 
     render() {
         return (
             <div className="columns is-mobile panel-block">
                 <div className="column is-half is-offset-one-quarter">
-                    <TablaIMC imc = {this.props.App.state.imc} datosTabla={
+                    <Tabla imc = {this.props.App.state.imc} datosTabla={
                         {
                             cabecera: { cabecera1: "IMC", cabecera2: "Situación", cabecera3: "Valoración" },
                             data: [
@@ -25,4 +26,4 @@ export default class CuerpoIndice extends Component {
             </div>
         )
     }
-};
+}
